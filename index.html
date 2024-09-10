@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imageup//profileblur.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .header {
+            color: white;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .header2{
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .links {
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            vertical-align:middle
+
+
+
+        }
+        .link-button {
+            display: flex;                /* Enable flexbox layout */
+            align-items: center;          /* Vertically center items */
+            width: 575px;                 /* Decrease width of the div */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 8px;                 /* Decrease padding */
+            margin: 10px;
+            font-size: 16px;              /* Decrease font size */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform .15s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 .5px 1.5px rgba(0,0,0,0.01);
+        }
+
+        .link-button:hover {
+              -ms-transform: scale(1.05); /* IE 9 */
+              -webkit-transform: scale(1.05); /* Safari 3-8 */
+              transform: scale(1.05); 
+            }
+
+
+        
+
+        
+
+        .icons {
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 40px;
+            margin: 0 10px;
+        }
+        .hidden-link {
+            display: none;
+        }
+        .frontimage{
+            display: inline-block;
+            position: relative;
+            padding: 0px;
+            border: 0px;
+            font: inherit;
+            vertical-align:middle
+
+        }
+
+        .text-wrapper {
+            flex: 1;            /* Take up remaining space */
+            text-align: center; /* Center text horizontally */
+            display: flex;
+            justify-content: center; /* Center text horizontally within the wrapper */
+        }
+
+        .footer{
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imageup//profileblur.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .header {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .header2{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .links {
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            vertical-align:middle
+
+
+
+        }
+        .link-button {
+            display: flex;                /* Enable flexbox layout */
+            align-items: center;          /* Vertically center items */
+            width: 375px;                 /* Decrease width of the div */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px;                 /* Decrease padding */
+            margin: 10px;
+            font-size: 16px;              /* Decrease font size */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform .15s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 .5px 1.5px rgba(0,0,0,0.01);
+        }
+
+        .link-button:hover {
+              -ms-transform: scale(1.05); /* IE 9 */
+              -webkit-transform: scale(1.05); /* Safari 3-8 */
+              transform: scale(1.05); 
+            }
+
+
+        
+
+        
+
+        .icons {
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 40px;
+            margin: 0 10px;
+        }
+        .hidden-link {
+            display: none;
+        }
+        .frontimage{
+            display: inline-block;
+            position: relative;
+            padding: 0px;
+            border: 0px;
+            font: inherit;
+            vertical-align:middle
+
+        }
+
+        .text-wrapper {
+            flex: 1;            /* Take up remaining space */
+            text-align: center; /* Center text horizontally */
+            display: flex;
+            justify-content: center; /* Center text horizontally within the wrapper */
+        }
+        .footer{
+            color: white;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+<br> <br>
+    <img src="imageup//profile.jpg" alt="Profile Image" class="profile-img">
+    <div class="header"><b>@earnwithrashid<b></div><br>
+
+    <!--<p><b>All Official Channels and Links</b></p> -->
+
+    <p class="header2">All Official Channels and Links</p>
+
+    
+
+
+    <div class="links">
+        <div class="link-button" onclick="openHiddenLink('youtube-link')"><img class= "frontimage" src="imageup//ytimage.png" alt="youtube image" width="45" height="45"><div class="text-wrapper"><b>How To Join Free VIP Group & Start Trading</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('telegram-link')"><img class= "frontimage" src="imageup//tgimage.webp" alt="telegram image" width="45" height="45"><div class="text-wrapper"><b>Telegram Channel (@EarnwithRashidChannel)</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('telegram-link-personal')"><img class= "frontimage" src="imageup//tgimage.webp" alt="telegram image" width="45" height="45"><div class="text-wrapper"><b>Telegram Channel (@EarnwithRashid)</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('whatsapp-link')"><img class= "frontimage" src="imageup//waimage.webp" alt="whatsapp image" width="50" height="50"><div class="text-wrapper"><b>What's App Channel</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('quotex-link')"><img class= "frontimage" src="imageup//quoteximage.png" alt="quotex image" width="40" height="40"><div class="text-wrapper"><b>Quotex Registration Link</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('quotex-course-link')"><img class= "frontimage" src="imageup//quoteximage.png" alt="quotex image" width="40" height="40"><div class="text-wrapper"><b>Quotex Free Course</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('bingx-link')"><img class= "frontimage" src="imageup//bingximage.png" alt="bingx image" width="40px" height="40px"><div class="text-wrapper"><b>BingX Registration Link</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('binance-link')"><img class= "frontimage" src="imageup//binanceimage.png" alt="binance image" width="45" height="45"><div class="text-wrapper"><b>Binance Registration Link</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('crypto-course-link')"><img class= "frontimage" src="imageup//btcimage.png" alt="bitcoin image" width="45" height="45"><div class="text-wrapper"><b>Free Crypto Course</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('youtube-channel-link')"><img class= "frontimage" src="imageup//ytimage.png" alt="youtube image" width="45" height="45"><div class="text-wrapper"><b>YouTube Channel (@earnwithrashid)</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('instagram-link')"><img class= "frontimage" src="imageup//instaimage.webp" alt="instagram image" width="40" height="40"><div class="text-wrapper"><b>Instagram (@earnwithrashid)</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('tiktok-link')"><img class= "frontimage" src="imageup//tiktokimage.jpg" alt="tiktok image" width="40px" height="40px"><div class="text-wrapper"><b>TikTok (@earnwithrashid)</b></div></div>
+
+        <div class="link-button" onclick="openHiddenLink('facebook-link')"><img class= "frontimage" src="imageup//fbimage.png" alt="facebook image" width="40px" height="40px"><div class="text-wrapper"><b>Facebook Page (@earnwithrashidofficial)</b></div></div>
+
+    </div>
+
+    <div class="icons">
+        <a href="https://facebook.com/@EarnwithRashidofficial" target="_blank"><img src="imagedown//fbdownwhite.png" alt="Icon"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="imagedown//instadownwhite.png" alt="Icon"></a>
+        <a href="https://whatsapp.com/channel/0029Va82SRN7j6g15nRATy3d" target="_blank"><img src="imagedown//wtdownwhite.png" alt="Icon"></a>
+        <a href="https://youtu.be/EcSyfVDvARE" target="_blank"><img src="imagedown//ytdownwhite.png" alt="Icon"></a>
+        <a href="https://www.tiktok.com/@earnwithrashid?_t=8kvwxghm8h4&_r=1" target="_blank"><img src="imagedown//tiktokdownwhite.png" alt="Icon"></a>
+    </div>
+<br>
+
+    <p class="footer"><b>Thanks for Visiting Us!!</b></p>
+
+
+
+    <!-- Hidden links -->
+
+    <a id="youtube-link" class="hidden-link" href="https://youtu.be/EcSyfVDvARE" target="_blank"></a>
+
+    <a id="telegram-link" class="hidden-link" href="https://t.me/earnwithrashidchannel" target="_blank"></a>
+
+    <a id="telegram-link-personal" class="hidden-link" href="https://t.me/earnwithrashid" target="_blank"></a>
+
+    <a id="whatsapp-link" class="hidden-link" href="https://whatsapp.com/channel/0029Va82SRN7j6g15nRATy3d" target="_blank"></a>
+
+    <a id="quotex-link" class="hidden-link" href="https://bit.ly/QuotexEarnwithRashid" target="_blank"></a>
+
+    <a id="quotex-course-link" class="hidden-link" href="https://bit.ly/QuotexCourseYoutube" target="_blank"></a>
+
+    <a id="bingx-link" class="hidden-link" href="http://bingx.com/partner/EarnwithRashid" target="_blank"></a>
+
+    <a id="binance-link" class="hidden-link" href="https://accounts.binance.com/register?ref=EMR059FW" target="_blank"></a>
+
+    <a id="crypto-course-link" class="hidden-link" href="https://www.youtube.com/playlist?list=PL7WpzGwM_2o5DM33ZXmQyaEnO1xydA6wC" target="_blank"></a>
+
+    <a id="youtube-channel-link" class="hidden-link" href="https://youtube.com/@EarnwithRashid" target="_blank"></a>
+
+    <a id="instagram-link" class="hidden-link" href="https://instagram.com/EarnwithRashid" target="_blank"></a>
+
+    <a id="tiktok-link" class="hidden-link" href="https://www.tiktok.com/@earnwithrashid?_t=8kvwxghm8h4&_r=1" target="_blank"></a>
+
+    <a id="facebook-link" class="hidden-link" href="https://facebook.com/@EarnwithRashidofficial" target="_blank"></a>
+
+    <script>
+        function openHiddenLink(id) {
+            document.getElementById(id).click();
+        }
+    </script>
+
+<!-- Made by Ayan -->
+
+
+</body>
+</html>
